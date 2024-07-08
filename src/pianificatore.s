@@ -162,8 +162,8 @@ _algoritmo_EDF:
     movl $4, %eax			# syscall WRITE 
 	movl $1, %ebx			# terminale
 	leal acapo, %ecx  		# carico l'indirizzo della stringa "acapo"
-	movl acapo_len, %edx	# lunghezza della stringa
-	int $0x80				# eseguo la syscall
+	movl acapo_len, %edx		# lunghezza della stringa
+	int $0x80		 	# eseguo la syscall
 
     #stampa frase scelta edf
     movl $4, %eax			 
@@ -184,8 +184,8 @@ _algoritmo_HPF:
     movl $4, %eax			# syscall WRITE 
 	movl $1, %ebx			# terminale
 	leal acapo, %ecx  		# carico l'indirizzo della stringa "acapo"
-	movl acapo_len, %edx	# lunghezza della stringa
-	int $0x80				# eseguo la syscall
+	movl acapo_len, %edx		# lunghezza della stringa
+	int $0x80			# eseguo la syscall
 
     #stampa frase scelta hpf
     movl $4, %eax			 
@@ -238,8 +238,8 @@ ciclo_stampa:
     movl $4, %eax			# syscall WRITE 
 	movl $1, %ebx			# terminale
 	leal acapo, %ecx  		# carico l'indirizzo della stringa "acapo"
-	movl acapo_len, %edx	# lunghezza della stringa
-	int $0x80				# eseguo la syscall
+	movl acapo_len, %edx		# lunghezza della stringa
+	int $0x80			# eseguo la syscall
 
     #stampa ID
     movl i, %ebx            # sposto indice in EBX
@@ -334,8 +334,8 @@ fine_stampa:
     movl $4, %eax			# syscall WRITE 
 	movl $1, %ebx			# terminale
 	leal acapo, %ecx  		# carico l'indirizzo della stringa "acapo"
-	movl acapo_len, %edx	# lunghezza della stringa
-	int $0x80				# eseguo la syscall
+	movl acapo_len, %edx		# lunghezza della stringa
+	int $0x80			# eseguo la syscall
 
     #stampa frase "Conclusione: "
     movl $4, %eax			 
@@ -354,8 +354,8 @@ fine_stampa:
     movl $4, %eax			# syscall WRITE 
 	movl $1, %ebx			# terminale
 	leal acapo, %ecx  		# carico l'indirizzo della stringa "acapo"
-	movl acapo_len, %edx	# lunghezza della stringa
-	int $0x80				# eseguo la syscall
+	movl acapo_len, %edx	 	# lunghezza della stringa
+	int $0x80			# eseguo la syscall
 
     #stampa frase "Penalty: "
     movl $4, %eax			 
@@ -374,8 +374,8 @@ fine_stampa:
     movl $4, %eax			# syscall WRITE 
 	movl $1, %ebx			# terminale
 	leal acapo, %ecx  		# carico l'indirizzo della stringa "acapo"
-	movl acapo_len, %edx	# lunghezza della stringa
-	int $0x80				# eseguo la syscall
+	movl acapo_len, %edx		# lunghezza della stringa
+	int $0x80			# eseguo la syscall
     
     jmp SceltaAlg
 
